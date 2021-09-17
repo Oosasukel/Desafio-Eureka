@@ -6,7 +6,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "set NODE_ENV=development&nodemon -r tsconfig-paths/register src/server.ts",
-    "start": "node dist/server.js",
+    "start": "NODE_PATH=dist/&node dist/server.js",
     "build": "tsc",
     "test": "jest -i",
     "lint": "eslint --ext .ts src",
